@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  background: #c3c3c3;
+  font-family: "Space Grotesk";
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+.header-logo {
+  font-size: 2em;
+}
+
+.header li {
+  list-style: none;
+}
+
+.header-hamburger {
+  padding: 1em;
+}
+
+.header-hamburger span {
+  display: block;
+  height: 2px;
+  width: 60px;
+  background: #000;
+}
+
+.header-hamburger span:nth-child(2) {
+  margin-top: 0.5em;
+}
+
+.wrapper {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.main-title {
+  padding: 0 0.2em;
+  font-size: 8em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.title {
+  letter-spacing: -4px;
+}
+
+.main-title img {
+  position: relative;
+  top: 0.2em;
+
+  width: 140px;
+}
+
+.divider {
+  width: 100%;
+  height: 8px;
+  background: #000;
+  margin: 0.5em 0;
+}
+
+.hero-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: url("./images/cover.jpeg") no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.hero-title {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  font-weight: bolder;
+  color: greenyellow;
+}
+
+.arrow-img img {
+  position: relative;
+  width: 150px;
+  top: -5em;
+}
+
+.hero-copy {
+  display: flex;
+  margin-top: 4em;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 1em;
+}
+
+.copy-left {
+  color: greenyellow;
+  text-transform: uppercase;
+}
+
+.btns {
+  display: flex;
+}
+
+.btn {
+  margin: 0 0.8em 1em 0;
+  padding: 0.3em 0.6em;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 20px;
+}
+
+.copy-right {
+  text-align: right;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+@media (max-width: 900px) {
+  .header-menu-1,
+  .header-menu-2 {
+    display: none;
+  }
+
+  .main-title {
+    font-size: 4em;
+  }
+
+  .main-title img {
+    display: none;
+  }
+
+  .hero-title img {
+    display: none;
+  }
+
+  .hero-copy {
+    flex-direction: column;
+    margin-top: 10em;
+  }
+
+  .btns {
+    display: none;
+  }
+
+  .copy-right {
+    text-align: left;
+  }
+}

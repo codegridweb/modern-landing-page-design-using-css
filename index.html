@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cg-landing-page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="header-logo">✸</div>
+        <div class="header-menu-1">
+          <li>Start page</li>
+          <li>Portfolio</li>
+          <li>Collections</li>
+          <li>Blog</li>
+        </div>
+        <div class="header-menu-2">
+          <li>About us</li>
+          <li>Dashboard</li>
+          <li>Shop</li>
+          <li>Contact</li>
+        </div>
+        <div class="header-hamburger">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <div class="wrapper">
+        <div class="main-title">
+          <div class="title-logo"><img src="images/logo.png" alt="" /></div>
+          <div class="title">Placewalk</div>
+        </div>
+        <div class="divider"></div>
+        <div class="hero-image">
+          <div class="hero-title">
+            <div>X</div>
+            <div>3</div>
+            <div>A</div>
+            <div>G</div>
+            <div class="arrow-img"><img src="images/arrow.png" alt="" /></div>
+            <div>2</div>
+          </div>
+          <div class="hero-copy">
+            <div class="copy-left">
+              <div class="btns">
+                <div class="btn">Portfolio Product</div>
+                <div class="btn">Building</div>
+              </div>
+              <div class="copy">
+                Travel in discovering interesting. Architectural sites in the
+                city
+                <br />
+                Get inspired and learn about descriptions in places.
+              </div>
+            </div>
+            <div class="copy-right">
+              <div class="copy">
+                A place of interesting places and photographic interesting shots
+                <br />
+                Be a short interview in our design studio
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      gsap.from(
+        ".header > div, .main-title > div, .divider, .hero-image, .hero-title > div, .btns> div, .hero-copy > div",
+        2,
+        {
+          y: "200",
+          opacity: 0,
+          ease: Expo.easeInOut,
+          delay: 1,
+          stagger: 0.08,
+        }
+      );
+
+      gsap.from(".arrow-img img", 1, {
+        scale: 0,
+        ease: Elastic.easeOut,
+        delay: 4,
+      });
+    </script>
+  </body>
+</html>
